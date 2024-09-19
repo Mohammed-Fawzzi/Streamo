@@ -1,0 +1,1 @@
+import{j as t}from"./index-wVCkWmHb.js";import{L as i}from"./logo-De9ptU1J.js";const o=()=>t.jsx("div",{className:"container-fluid",children:t.jsx("div",{className:"d-flex justify-content-center align-items-center position-fixed start-0 end-0 top-0 bottom-0 loading",children:t.jsx("img",{src:i,alt:"Loading"})})});export{o as default};
