@@ -4,11 +4,6 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 // Lazy load components
 const Layout = lazy(() => import("./Components/Layout/Layout"));
 const Home = lazy(() => import("./Components/Home/Home"));
-const Login = lazy(() => import("./Components/Login/Login"));
-const Register = lazy(() => import("./Components/Register/Register"));
-const ProtectedRoute = lazy(() =>
-  import("./Components/ProtectedRoute/ProtectedRoute")
-);
 const NotFound = lazy(() => import("./Components/NotFound/NotFound"));
 const Movies = lazy(() => import("./Components/Movies/Movies"));
 const Series = lazy(() => import("./Components/Series/Series"));
@@ -30,9 +25,7 @@ const App = () => {
           index: true,
           element: (
             <Suspense fallback={<Loading />}>
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
+              <Home />
             </Suspense>
           ),
         },
@@ -40,9 +33,7 @@ const App = () => {
           path: "/movies",
           element: (
             <Suspense fallback={<Loading />}>
-              <ProtectedRoute>
-                <Movies />
-              </ProtectedRoute>
+              <Movies />
             </Suspense>
           ),
         },
@@ -50,9 +41,7 @@ const App = () => {
           path: "/series",
           element: (
             <Suspense fallback={<Loading />}>
-              <ProtectedRoute>
-                <Series />
-              </ProtectedRoute>
+              <Series />
             </Suspense>
           ),
         },
@@ -60,9 +49,7 @@ const App = () => {
           path: "/tv",
           element: (
             <Suspense fallback={<Loading />}>
-              <ProtectedRoute>
-                <Tv />
-              </ProtectedRoute>
+              <Tv />
             </Suspense>
           ),
         },
@@ -70,25 +57,7 @@ const App = () => {
           path: "/artists",
           element: (
             <Suspense fallback={<Loading />}>
-              <ProtectedRoute>
-                <Artists />
-              </ProtectedRoute>
-            </Suspense>
-          ),
-        },
-        {
-          path: "/login",
-          element: (
-            <Suspense fallback={<Loading />}>
-              <Login />
-            </Suspense>
-          ),
-        },
-        {
-          path: "/register",
-          element: (
-            <Suspense fallback={<Loading />}>
-              <Register />
+              <Artists />
             </Suspense>
           ),
         },

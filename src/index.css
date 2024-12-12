@@ -12,12 +12,12 @@
 }
 ::-webkit-scrollbar-thumb {
   background: #dc3545;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Encode Sans Expanded", sans-serif;
   background-color: var(--secondary-color);
   color: #fff;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 .App {
@@ -64,6 +64,7 @@ nav a {
   border: 2px solid white;
   border-radius: 50%;
   padding: 8px;
+  cursor: pointer;
   transition: all 0.3s;
 }
 .profile-image {

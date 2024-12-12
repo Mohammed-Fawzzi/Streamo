@@ -72,7 +72,7 @@ const Artists = () => {
                     <span className="fw-bold text-warning pb-2">
                       Known for:
                     </span>
-                    {artist.known_for.length > 0 ? (
+                    {artist.known_for && artist.known_for.length > 0 ? (
                       <div>
                         <p className="pt-2">
                           <span className="fw-bold text-danger">Title:</span>{" "}
