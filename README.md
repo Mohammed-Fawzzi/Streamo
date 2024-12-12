@@ -18,7 +18,6 @@ Streamo: is a comprehensive movie site that allows you to watch movies and TV sh
 - React
 - Bootstrap
 - Font Awesome
-- Context API
 - React Router DOM
 - Axios
 - React Query
@@ -29,8 +28,6 @@ Streamo: is a comprehensive movie site that allows you to watch movies and TV sh
 ## Preview
 
 ![Preview Image](/preview/preview.png)
-![Preview Image 1](/preview/preview1.png)
-![Preview Image 2](/preview/preview2.png)
 ![Preview Image 3](/preview/preview3.png)
 ![Preview Image 4](/preview/preview4.png)
 ![Preview Image 5](/preview/preview5.png)
@@ -45,4 +42,4 @@ Streamo: is a comprehensive movie site that allows you to watch movies and TV sh
 
 ## Live Demo
 
-Check out the live demo [here](https://your-demo-link.com).
+Check out the live demo [here](https://mohammed-fawzzi.github.io/Streamo/).
