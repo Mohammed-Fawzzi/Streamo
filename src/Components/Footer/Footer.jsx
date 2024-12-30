@@ -63,7 +63,7 @@ const Footer = () => {
       <p className="text-center pt-3 footer-rights text-white">
         © All Rights Reserved{" "}
         <Link
-          href="https://www.linkedin.com/in/mohamed-fawzzi98/"
+          to="https://www.linkedin.com/in/mohamed-fawzzi98/"
           rel="noopener noreferrer"
           target="_blank"
           className="text-decoration-none text-danger fw-bold"
