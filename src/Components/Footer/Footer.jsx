@@ -6,6 +6,7 @@ import image3 from "../../assets/3.png";
 import image4 from "../../assets/4.png";
 import image5 from "../../assets/5.png";
 import image6 from "../../assets/6.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -61,14 +62,14 @@ const Footer = () => {
       </div>
       <p className="text-center pt-3 footer-rights text-white">
         © All Rights Reserved{" "}
-        <a
-          href="https://www.linkedin.com/in/mohamed-fawzzi-72b962280/"
+        <Link
+          href="https://www.linkedin.com/in/mohamed-fawzzi98/"
           rel="noopener noreferrer"
           target="_blank"
           className="text-decoration-none text-danger fw-bold"
         >
           Mohamed Fawzzi.
-        </a>
+        </Link>
       </p>
     </footer>
   );
