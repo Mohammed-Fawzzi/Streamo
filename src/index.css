@@ -126,6 +126,32 @@ nav a {
   border: none;
   outline: none;
 }
+.home-caption .hero-email-group {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.home-caption .hero-email-input {
+  flex: 1;
+  min-width: 0;
+  padding-block: 0.9rem;
+  border-radius: 0.75rem 0 0 0.75rem !important;
+}
+.home-caption .hero-email-btn {
+  flex-shrink: 0;
+  padding-inline: 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0 !important;
+  white-space: nowrap;
+}
+.home-caption .hero-email-btn:hover,
+.home-caption .hero-email-btn:focus,
+.home-caption .hero-email-btn:active {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  box-shadow: none !important;
+}
 @media screen and (max-width: 768px) {
   .home-caption {
     position: absolute;
@@ -186,6 +212,7 @@ nav a {
 .movie-card {
   position: relative;
   overflow: hidden;
+  border-radius: 0.75rem;
 }
 .movie-info {
   position: absolute;
@@ -202,14 +229,24 @@ nav a {
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 10px;
+  border-radius: 0.75rem;
 }
 .movie-card img {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  border-radius: 0.75rem;
 }
 .movie-card:hover .movie-info {
   opacity: 1;
+}
+.artist-name {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 .product {
   border: solid 0.3px rgba(240, 53, 69, 0.5);
@@ -237,17 +274,89 @@ nav a {
   width: 80%;
   max-width: 800px;
   background-color: var(--secondary-color);
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 48px 16px 16px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.55);
   z-index: 1000;
+  border: 1px solid rgba(220, 53, 69, 0.35);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .video-modal iframe {
   width: 100%;
   height: 315px;
-}
-.video-modal button {
   display: block;
-  margin: 10px auto;
+  border-radius: 0.35rem;
+}
+.video-modal-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(220, 53, 69, 0.8);
+  border-radius: 0.25rem;
+  background-color: rgba(220, 53, 69, 0.15);
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.video-modal-close:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+/* Slider header + arrows */
+.slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.slider-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.slider-nav-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dc3545;
+  border-radius: 50%;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+}
+.slider-nav-btn:hover,
+.slider-nav-btn:focus {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.join-cta-input {
+  border-radius: 0.75rem 0.75rem 0 0 !important;
+  border: none;
+}
+.join-cta-btn {
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+@media (min-width: 768px) {
+  .join-cta-input {
+    border-radius: 0.75rem 0 0 0.75rem !important;
+  }
+  .join-cta-btn {
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
 }
 
 /* Error */
@@ -270,46 +379,27 @@ nav a {
   align-items: center;
   gap: 10px;
 }
-.footer-icons div {
+.footer-icons a {
   min-width: 35px;
   min-height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-icons .telegram {
+  background-color: #229ed9;
+}
+.footer-icons .whatsapp {
+  background-color: #25d366;
+}
+.footer-icons .github {
+  background-color: #333;
 }
 .footer-icons .linkedIn {
   background-color: #0a66c2;
-  transition: all 0.3s;
-}
-.footer-icons .linkedIn:hover {
-  background-color: #fff;
-  color: #0a66c2;
-}
-.footer-icons .faceBook {
-  background-color: #1877f2;
-  transition: all 0.3s;
-}
-.footer-icons .faceBook:hover {
-  background-color: #fff;
-  color: #1877f2;
-}
-.footer-icons .twitter {
-  background-color: #1da1f2;
-  transition: all 0.3s;
-}
-.footer-icons .twitter:hover {
-  background-color: #fff;
-  color: #1da1f2;
-}
-.footer-icons .instagram {
-  background-color: #c13584;
-  transition: all 0.3s;
-}
-.footer-icons .instagram:hover {
-  background-color: #fff;
-  color: #c13584;
 }
 .footer-links {
   cursor: pointer;
