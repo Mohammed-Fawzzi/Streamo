@@ -204,10 +204,17 @@ nav a {
 /* Movies */
 .movie-title,
 .movie-description {
-  white-space: nowrap;
+  font-size: 0.95rem;
+  max-width: 100%;
+  min-width: 0;
+  padding-inline: 0.35rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: block;
+  word-break: break-word;
 }
 .movie-card {
   position: relative;

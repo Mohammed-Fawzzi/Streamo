@@ -30,7 +30,7 @@ export const footerSocials = [
     id: 2,
     icon: "fa-brands fa-whatsapp",
     className: "whatsapp",
-    url: "https://wa.me/966541005479",
+    url: "https://wa.me/+201021580334",
   },
   {
     id: 3,
