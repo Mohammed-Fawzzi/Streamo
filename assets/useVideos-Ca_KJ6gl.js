@@ -1,1 +1,0 @@
-import{a as n}from"./index-yU2LBONY.js";function i(e){return n.get(`/movie/${e}/videos?language=en-US`)}function g(e){return n.get(`/tv/${e}/videos?language=en-US`)}function o(e){return n.get(`/tv/${e}/videos?language=en-US`)}function a(e){return n.get(`/movie/${e}/videos?language=en-US`)}export{i as a,g as b,o as c,a as g};
