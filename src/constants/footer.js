@@ -1,9 +1,9 @@
-import image1 from "@/assets/1.png";
-import image2 from "@/assets/2.png";
-import image3 from "@/assets/3.png";
-import image4 from "@/assets/4.png";
-import image5 from "@/assets/5.png";
-import image6 from "@/assets/6.png";
+import image1 from "@/assets/1.webp";
+import image2 from "@/assets/2.webp";
+import image3 from "@/assets/3.webp";
+import image4 from "@/assets/4.webp";
+import image5 from "@/assets/5.webp";
+import image6 from "@/assets/6.webp";
 
 export const footerDescription =
   "Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris naliquip comm.";
